@@ -10,27 +10,28 @@ prose:
     - /_includes
   metadata:
     _config:
-      - name: "layout"
-        field:
-          element: "hidden"
-          value: "blog"
-      - name: "tags"
-        field:
-          element: "multiselect"
-          label: "Add Tags"
-          placeholder: "Choose Tags"
-          options:
-            - name: "Apples"
-              value: "apples"
-            - name: "Bananas"
-              value: "bananas"
-    _config/static:
-      - name: "layout"
-        field:
-          element: "hidden"
-          value: "page"
-      - name: "permalink"
+      - name: "introText"
         field:
           element: "text"
-          label: "Permalink"
-          value: ""
+          label: "Intro Text"
+          value: "Welcome to Enrollment"
+      - name: "bodyText"
+        field:
+          element: "textarea"
+          label: "Body Text"
+          value: "lorem ipsum"
+      - name: "firstNameValidation"
+        field:
+          element: "multiselect"
+          label: "Validation Rules"
+          placeholder: "Choose Rules"
+          options:
+            - name: "minLength"
+              value: "minLength"
+            - name: "maxLength"
+              value: "maxLength"
+      - name: "showAd"
+        field:
+          element: "checkbox"
+          label: "Show ad on first page"
+          value: "true"
