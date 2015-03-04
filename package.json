@@ -1,0 +1,12 @@
+{
+  "name": "prose-test",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "node_modules\\.bin\\m2j _config\\md\\evoyaenroll.md > _config\\json\\evoyaenroll.json"
+  },
+  "dependencies": {
+    "markdown-to-json": "~0.4.2"
+  }
+}
