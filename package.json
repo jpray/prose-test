@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "node_modules\\.bin\\m2j _config\\md\\evoyaenroll.md > _config\\json\\evoyaenroll.json"
+    "build": "node_modules\\.bin\\m2j configs\\global\\config.md > configs\\global\\config.json",
+    "build2": "node_modules\\.bin\\m2j configs\\welcome-page\\config.md > configs\\welcome-page\\config.json"    
   },
   "dependencies": {
     "markdown-to-json": "~0.4.2"
