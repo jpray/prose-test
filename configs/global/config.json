@@ -1,1 +1,8 @@
-{}
+{
+  "config": {
+    "published": false,
+    "showPromo": false,
+    "preview": "",
+    "basename": "config"
+  }
+}
