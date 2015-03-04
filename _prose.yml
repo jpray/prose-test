@@ -1,37 +1,32 @@
 prose:
-  rooturl: '_config'
+  rooturl: 'configs'
   siteurl: ''
   relativeLinks: ''
   media: 'media'
   ignore:
-    - index.md
+    - configs/global/config.json
+    - configs/welcome-page/config.json
     - _config.yml
-    - /_layouts
-    - /_includes
   metadata:
-    _config:
+    _config/global:
+      - name: "showPromo"
+        field:
+          element: "checkbox"
+          label: "Show Promotional Content"
+          value: "true"
+    _config/welcome-page:
+      - name: "heading"
+        field:
+          element: "text"
+          label: "Heading"
+          value: "Welcome to Enrollment"
       - name: "introText"
         field:
           element: "text"
           label: "Intro Text"
-          value: "Welcome to Enrollment"
-      - name: "bodyText"
+          value: "Let's start investing in your future, today."
+      - name: "buttonText"
         field:
-          element: "textarea"
-          label: "Body Text"
-          value: "lorem ipsum"
-      - name: "firstNameValidation"
-        field:
-          element: "multiselect"
-          label: "Validation Rules"
-          placeholder: "Choose Rules"
-          options:
-            - name: "minLength"
-              value: "minLength"
-            - name: "maxLength"
-              value: "maxLength"
-      - name: "showAd"
-        field:
-          element: "checkbox"
-          label: "Show ad on first page"
-          value: "true"
+          element: "text"
+          label: "Button Text"
+          value: "GET STARTED"
