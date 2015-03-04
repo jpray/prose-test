@@ -8,13 +8,13 @@ prose:
     - configs/welcome-page/config.json
     - _config.yml
   metadata:
-    _config/global:
+    configs/global:
       - name: "showPromo"
         field:
           element: "checkbox"
           label: "Show Promotional Content"
           value: "true"
-    _config/welcome-page:
+    configs/welcome-page:
       - name: "heading"
         field:
           element: "text"
